@@ -1,8 +1,8 @@
 package com.pluralsight.models;
 
 import java.util.ArrayList;
-
-public class Hand { // dependent on Card class
+// dependent on Card class
+public class Hand {
     private ArrayList<Card> cards;
 
     public Hand() {
