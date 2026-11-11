@@ -1,5 +1,6 @@
 package com.pluralsight.models;
 
+// primary object in Application
 public class Card {
     private String suit;
     private String value; // Ace, King, Queen, Jack, 2, 3, 4, 5, 6, 7, 8, 9, 10
@@ -9,6 +10,7 @@ public class Card {
     public Card(String suit, String value) {
         this.suit = suit;
         this.value = value;
+        this.faceUp = false;
     }
 
     //getters
@@ -47,7 +49,7 @@ public class Card {
                 case "3" -> 3;
                 case "2" -> 2;
                 default -> throw new IllegalStateException("Invalid value: " + this.value.toUpperCase());
-            }
+            };
         } else {
             return 0;
         }
