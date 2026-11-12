@@ -39,7 +39,7 @@ public class Card {
             //todo determine point value and return it
             return switch (this.value.toUpperCase()) {
                 case "ACE" -> 11;
-                case "KING", "JACK", "QUEEN", "10" -> 19;
+                case "KING", "JACK", "QUEEN", "10" -> 10;
                 case "9" -> 9;
                 case "8" -> 8;
                 case "7" -> 7;
@@ -67,10 +67,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{" +
-                "suit='" + suit + '\'' +
-                ", value='" + value + '\'' +
-                ", faceUp=" + faceUp +
-                '}';
+        return value + " " + suit;
     }
 }

@@ -28,7 +28,7 @@ public class Deck {
 
     public Card deal() {
         // deal the top card (if there are any cards left)
-        if(cards.size() > 0){
+        if(!cards.isEmpty()){
             Card card = cards.remove(0);
             return card;
         } else {
@@ -40,4 +40,10 @@ public class Deck {
         return cards.size();
     }
 
+    @Override
+    public String toString() {
+        return "Deck{" +
+                "cards=" + cards +
+                "}";
+    }
 }
