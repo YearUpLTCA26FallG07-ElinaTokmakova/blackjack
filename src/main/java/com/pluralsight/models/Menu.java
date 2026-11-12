@@ -10,4 +10,8 @@ public class Menu {
                 ╚════════════════════════════════════════╝
                 """);
     }
+
+    public static void pressEnterTo(String prompt){
+        Console.promptForString("Press Enter↵ to " + prompt);
+    }
 }
